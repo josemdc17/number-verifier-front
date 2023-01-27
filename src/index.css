@@ -1,0 +1,130 @@
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: rgb(56,97,124);
+  background: radial-gradient(circle, rgba(56,97,124,1) 3%, rgba(17,55,80,1) 34%);
+  min-height: 100vh;
+  min-width: 320px;
+  place-content: center;
+  display: grid;
+}
+
+.mainWrapper{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-content: center;
+  gap: 15px;
+
+}
+
+.titleWrapper{
+  color: antiquewhite;
+  font-size: 2.4em;
+  text-align: center;
+}
+
+.wrapper{
+  margin: 10px;
+  font-size: 1.5em;
+  color: rgb(5, 5, 5);
+  padding: 0 20px 20px 20px;
+  width: 450px;
+  background-color: rgb(235, 234, 235);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wrapper form input::file-selector-button{
+  color: rgb(243, 233, 219);
+  border-radius: 6px;
+  width: 140px;
+  height: 30px;
+  background-color: rgb(56,97,124);
+  border: none;
+  transition: background-color 0.3s;
+  font-size: 1.4em;
+}
+
+.wrapper form input::file-selector-button:hover{
+  background-color: rgb(84, 144, 184);
+}
+
+.textWrapper{
+  padding-left: 15px;
+  padding-right: 15px;
+  place-content: center;
+  text-align: center;
+}
+
+button{
+  color: rgb(243, 233, 219);
+  font-size: 1.3em;
+  border-radius: 10px;
+  width: 230px;
+  height: 60px;
+  background-color: rgb(56,97,124);
+  border: none;
+  transition: background-color 0.3s;
+}
+
+button:hover{
+  background-color: rgb(84, 144, 184);
+}
+
+hr{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.buttonWrapper{
+  text-align: center;
+}
+
+.listWrapper{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  text-align: center;
+}
+
+.listItem{
+  font-size: 0.7em;
+}
+
+.instructionPoint{
+  color: antiquewhite;
+  text-align: center;
+  background-color: rgb(13, 101, 156);
+  border-radius: 50px;
+  height: 60px;
+  padding-top: 8px;
+}
+
+
+@media(max-width: 1600px){
+  .mainWrapper{
+    grid-template-columns: auto;
+    gap: 10px;
+  }
+}
+
+@media(max-width: 500px){
+  .titleWrapper{
+    font-size: 1.4em;
+  }
+
+  body{
+    width: 370px;
+  }
+
+  .wrapper{
+    width: 280px;
+  }
+}
